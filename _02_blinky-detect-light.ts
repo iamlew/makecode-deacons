@@ -1,11 +1,11 @@
 loops.forever(function () {
     if (input.lightLevel() > 128) {
-        light.setAll(0xffffff)
+        light.setAll(Colors.White)
     } else {
         if (input.lightLevel() < 20) {
-            light.setAll(0xff0000)
+            light.setAll(Colors.Red)
         } else {
-            light.setAll(0x00ff00)
+            light.setAll(Colors.Green)
         }
     }
     loops.pause(1000)
